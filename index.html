@@ -722,7 +722,7 @@
     }
   }
 
-  // Function to fetch the number of comments for a given repository
+  // Function to fetch the number of comments for a repository
   async function fetchRepoComments(owner, repo) {
     try {
       // Fetch issues for the repository
@@ -731,15 +731,14 @@
       );
       const issues = await response.json();
 
-      // Calculate the total number of comments for all issues
+      // Calculate the total number of comments from all issues
       const totalComments = issues.reduce(
-        (total, issue) => total + issue.comments,
+        (acc, issue) => acc + issue.comments,
         0
       );
-
+      
       return totalComments;
     } catch (error) {
-      // Log and handle errors if any
       console.error(`Error fetching comments for ${owner}/${repo}:`, error);
       return 0;
     }
@@ -755,6 +754,7 @@
       // Fetch the number of comments for the repository
       const comments = await fetchRepoComments(repo.owner.login, repo.name);
 
+      // Display repository information
       blogPostsContainer.innerHTML += `
         <div class="col-lg-4 col-md-6">
           <div class="blog-style">
@@ -773,11 +773,7 @@
               <li>
                 <a href="#">
                   <i>
-                    <!-- SVG for Admin icon -->
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
-                      <path d="M4 4a3 3 0 1 1 6 0 3 3 0 0 1-6 0zm6.5 1a4.5 4.5 0 1 0-9 0v.553a2 2 0 0 0 .686 1.53l.832.664a3 3 0 0 0 1.964.72h3.036a3 3 0 0 0 1.964-.72l.832-.664a2 2 0 0 0 .686-1.53V5zm-1.646 1.354a.5.5 0 1 1 .707-.707l1.646 1.647a.5.5 0 0 1 0 .707l-1.646 1.646a.5.5 0 1 1-.707-.707l.646-.647-.646-.646a.5.5 0 0 1-.057-.06l-.001-.001-.004-.004a.5.5 0 0 1-.055-.056l-.001-.001-.647-.647a.5.5 0 0 1 .707-.707l.646.647z"/>
-                    </svg>
-                    <!-- Admin icon -->
+                    <svg ...> <!-- Admin icon -->
                   </i>
                   by ${repo.owner.login}
                 </a>
@@ -786,12 +782,7 @@
               <li>
                 <a href="#">
                   <i>
-                    <!-- SVG for Comments icon -->
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-dots" viewBox="0 0 16 16">
-                      <path d="M2.5 3.5a1.5 1.5 0 1 1 3 0v5a1.5 1.5 0 1 1-3 0v-5zM8 4a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm5-1a1.5 1.5 0 1 1 1.5 1.5v5a1.5 1.5 0 0 1-3 0v-5A1.5 1.5 0 0 1 13 3z"/>
-                      <path d="M0 3a1 1 0 0 1 1-1h1.071a6.524 6.524 0 0 0 4.487 2c1.67 0 3.228-.62 4.443-1.747A1 1 0 0 1 12 2h3a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-1.071a6.52 6.52 0 0 0-4.487-2A7.494 7.494 0 0 0 4.5 5H3a1 1 0 0 1-1-1V3z"/>
-                    </svg>
-                    <!-- Comments icon -->
+                    <svg ...> <!-- Comments icon -->
                   </i>
                   ${comments} Comments
                 </a>
