@@ -727,17 +727,18 @@
     <!-- Email Js -->
   </body>
 </html>
-
 <script>
   // Function to fetch GitHub repositories
   async function fetchGitHubRepos(username) {
     try {
+      // Fetch GitHub repositories for the specified username
       const response = await fetch(
         `https://api.github.com/users/${username}/repos`
       );
       const data = await response.json();
       return data;
     } catch (error) {
+      // Log and handle errors if any
       console.error("Error fetching GitHub repositories:", error);
       return [];
     }
@@ -773,7 +774,15 @@
                   by ${repo.owner.login}
                 </a>
               </li>
-              <!-- Add more details if needed -->
+              <!-- Display number of comments -->
+              <li>
+                <a href="#">
+                  <i>
+                    <svg ...> <!-- Comments icon -->
+                  </i>
+                  ${repo.comments} Comments
+                </a>
+              </li>
             </ul>
           </div>
         </div>
