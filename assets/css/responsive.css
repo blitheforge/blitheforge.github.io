@@ -1,0 +1,641 @@
+@media(max-width: 1400px){
+  .gap {
+    padding: 100px 0;
+  }
+  .no-top{
+      padding-top: 0;
+  }
+  .no-bottom{
+      padding-bottom: 0;
+  }
+  .consulting-business-text span {
+    font-size: 30px;
+  }
+  form#subscribe-form {
+    width: 78%;
+  }
+  .count-style img {
+    width: 70px;
+    border-radius: 0;
+  }
+  h1 {
+    font-size: 70px;
+    line-height: 80px;
+  }
+  .team-style.two .team-text {
+    padding: 17px;
+    margin-left: -37px;
+    padding-left: 60px;
+    padding-top: 30px;
+  }
+  .consulting-business-text h4 {
+    font-size: 24px;
+  }
+  .consulting-business-text:before {
+    top: -13%;
+  }
+  .pricing-plan-style h5 {
+    font-size: 52px;
+  }
+  .hero-text p {
+    font-size: 20px;
+    line-height: 30px;
+    width: 84%;
+    padding-bottom: 32px;
+  }
+  .service-text a h4 {
+    font-size: 24px;
+  }
+  .clients-slider .item img {
+    transform: scale(0.8);
+    }
+  .accordion-style > p {
+    width: 100%;
+    margin-bottom: 28px;
+  }
+  .quotation.owl-carousel .owl-item img {
+    width: 134px;
+  }
+  .clients-rate {
+    padding: 30px 47px;
+  }
+  .quotation-mark figure:before {
+    right: 31px;
+  }
+  .title {
+    padding: 14px 54px;
+    padding-right: 10px;
+    font-size: 18px;
+  }
+  footer .heading {
+    width: 80%;
+    padding-bottom: 40px;
+  }
+  .address {
+    margin-top: 40px;
+  }
+  .quotation-mark p {
+    font-size: 26px;
+    line-height: 46px;
+    width: 90%;
+  }
+  .clients-rate img {
+    padding: 14px;
+    margin-bottom: 14px;
+  }
+  .team-style.two img {
+    height: 236px;
+  }
+  .two .team-text h6 {
+    padding-bottom: 20px;
+  }
+  .count-text {
+    width: 56%;
+  }
+  .rating {
+    margin-top: 60px;
+  }
+  img.shaps-line {
+    transform: scale(0.7);
+  }
+  #stickyHeader.slideUp {
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+  .background-color {
+    padding-bottom: 100px;
+  }
+  .consulting-business-text h4,.consulting-business-text {
+    width: 100%;
+  }
+  .count-style {
+    margin-top: 30px;
+  }
+  img.shaps-dots {
+    width: 230px;
+  }
+  .consulting-business-text:hover:before {
+    transform: scale(.8);
+  }
+  .count-style h3 {
+    font-size: 50px;
+  }
+  .get-a-quote {
+    padding: 30px 30px;
+    padding-top: 30px;
+  }
+  .heading h2 {
+    font-size: 60px;
+    line-height: 70px;
+  }
+  .hero-section {
+    padding-top: 80px;
+    padding-bottom: 100px;
+  }
+  .copyright {
+    margin-top: 60px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+  #progress {
+    height: 60px;
+    width: 60px;
+  }
+  .get-a-quote h6 {
+    padding-bottom: 20px;
+  }
+  .get-a-quote input[type="text"], .get-a-quote input[type="number"] {
+    margin-bottom: 14px;
+  }
+  .get-a-quote:before {
+    top: -8%;
+    width: 85px;
+    left: -11%;
+  }
+}
+@media(max-width: 1200px){
+  .gap {
+    padding: 80px 0;
+  }
+  .no-top{
+      padding-top: 0;
+  }
+  .no-bottom{
+      padding-bottom: 0;
+  }
+  .hs-responsive-embed-youtube iframe {
+    height: 319px;
+  }
+  .video-fram:before {
+    left: -11%;
+  }
+  .get-subscribee .btn {
+    padding: 22px 27px;
+    width: 232px;
+  }
+  .video-fram:before {
+    top: -10%;
+  }
+  .top-bar ul li {
+    padding-right: 30px;
+  }
+  .hero-text p {
+    width: 100%;
+  }
+  .consulting-business-text span {
+    font-size: 30px;
+  }
+  form#subscribe-form {
+    width: 75%;
+  }
+  .subscribe-text:before {
+    top: -42%;
+    left: -6%;
+  }
+  .service-text a h4 {
+    font-size: 24px;
+  }
+  .consulting-business-text h4 {
+    font-size: 24px;
+  }
+  .team-text {
+    padding: 18px;
+    padding-top: 43px;
+  }
+  .clients-rate {
+    margin-top: 14px;
+  }
+  .pricing-plan-style {
+    padding: 30px;
+    width: 100%;
+  }
+  .blog-style > a {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .address i {
+    width: 80px;
+    height: 96px;
+    margin-right: 16px;
+  }
+  .pricing-plan-style h4 {
+    font-size: 28px;
+  }
+  .blog-style .date {
+    padding: 10px 24px;
+  }
+  .footer {
+    padding-top: 120px;
+  }
+  .service-text {
+    margin-bottom: 36px;
+  }
+  .address p br {
+    display: none;
+  }
+  .title {
+    padding: 14px 60px;
+    padding-right: 10px;
+    font-size: 18px;
+  }
+  .heading p {
+    font-size: 18px;
+    line-height: 30px;
+    padding-top: 16px;
+  }
+  .pricing-plan-style h5 {
+    font-size: 50px;
+    padding-bottom: 27px;
+  }
+  .clients-rate p {
+    padding-bottom: 10px;
+  }
+  .clients-rate h3 {
+    font-size: 68px;
+  }
+  .clients-rate {
+    padding: 15px 26px;
+  }
+  .team-style.two .team-text {
+    padding: 8px;
+    margin-left: -37px;
+    padding-left: 60px;
+    padding-top: 12px;
+  }
+  .team-style.two img {
+    height: 200px;
+  }
+  .team-text h3 {
+    font-size: 24px;
+  }
+  .heading h2 {
+    font-size: 42px;
+    line-height: 52px;
+  }
+  .consulting img {
+    width: 100px;
+  }
+  .heading.two p {
+    padding-bottom: 20px;
+  }
+  .heading h2 span {
+    border-bottom: 6px solid #108A00;
+    line-height: 46px;
+    display: inline-block;
+  }
+  .consulting {
+    border-radius: 20px;
+    margin-bottom: -50px;
+    margin-top: 20px;
+    padding: 20px;
+  }
+  h1 {
+    font-size: 64px;
+    line-height: 73px;
+  }
+  img.shaps-line {
+    transform: scale(0.5);
+  }
+  .click-here .hero-text {
+    width: 100%;
+  }
+}
+@media(max-width: 993px){
+  .top-bar nav {
+    display: none;
+  }
+  .subscribe-with .hero-text {
+    width: 100%;
+  }
+  .get-subscribee input {
+    width: 100%;
+    height: 50px;
+  }
+  img.shaps-line {
+    display: none;
+  }
+  .video-fram iframe {
+    width: 100%;
+    height: 300px;
+  }
+  .subscribe-with .subscribe-text p {
+    padding-bottom: 12px;
+  }
+  .video-fram {
+    margin-top: 40px;
+  }
+  .get-a-quote {
+    margin-top: 40px;
+  }
+  .subscribe-with .subscribe-text p {
+    padding-right: 12px;
+    font-size: 18px;
+  }
+  .subscribe-text {
+    flex-wrap: wrap;
+  }
+  .rating {
+    margin-top: 40px;
+  }
+  form#subscribe-form,.subscribe-text {
+    width: 100%;
+  }
+  .heading {
+    width: 100%;
+    padding-bottom: 20px;
+  }
+  .get-subscribee .btn {
+    padding: 16px 30px;
+  }
+  .consulting-business-text.three {
+    margin-top: 30px;
+  }
+  .quotation-mark-img {
+    display: none;
+  }
+  .img-provide img {
+    z-index: 11;
+    position: relative;
+    width: 70%;
+    margin: auto;
+    display: flex;
+    margin-bottom: 24px;
+  }
+  .video img {
+    object-fit: cover;
+    width: 100%;
+    height: 300px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  ul.social-icon {
+    margin-top: 20px;
+  }
+  .copyright {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .quotation .owl-dots {
+    margin-bottom: 0;
+  }
+  .team-style:before {
+    top: -12%;
+    left: -7%;
+  }
+  .accordion {
+    margin-right: 0;
+  }
+  .quotation-mark p {
+    font-size: 22px;
+    line-height: 38px;
+    width: 100%;
+  }
+  .blog-style {
+    margin-bottom: 40px;
+  }
+  #services {
+    background-size: cover;
+    padding-bottom: 80px;
+  }
+  .pricing-plan-style {
+    margin-bottom: 30px;
+  }
+  #pricing {
+    background-size: cover;
+  }
+  .team-text {
+    z-index: -1;
+    margin: 0;
+    padding: 60px;
+    width: 100%;
+    border-radius: 20px;
+    margin-left: -20px;
+  }
+  .team-style {
+    position: relative;
+    display: flex;
+    margin-top: 40px;
+  }
+  .meet-our {
+    padding-bottom: 0;
+  }
+  .team-style.two .team-text {
+    padding: 40px;
+    padding-left: 60px;
+  }
+  .team-style.two img {
+    height: auto;
+  }
+  .clients-rate {
+    padding: 45px 36px;
+  }
+  .address {
+    margin-top: 20px;
+  }
+  footer {
+    background-size: cover;
+  }
+}
+@media(max-width: 768px){
+  .gap {
+    padding: 60px 0;
+  }
+  .no-top{
+      padding-top: 0;
+  }
+  .no-bottom{
+      padding-bottom: 0;
+  }
+  .subscribe-text:before {
+    top: -31%;
+    left: -10%;
+  }
+  .video-section .hero-text p {
+    font-size: 18px;
+    width: 100%;
+    padding-bottom: 28px;
+  }
+  form#subscribe-form {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .get-subscribee input {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  h1 {
+    font-size: 48px;
+    line-height: 56px;
+  }
+  .team-style {
+    display: block;
+  }
+  .hero-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .team-text {
+    z-index: -1;
+    margin: 0;
+    padding: 30px;
+    width: 100%;
+    border-radius: 20px;
+    margin-left: -20px;
+    margin: 0;
+    margin-top: -20px;
+  }
+  .footer {
+    padding-top: 80px;
+  }
+  .copyright p {
+    margin-top: 10px;
+  }
+  .footer .heading a {
+    margin-top: 24px;
+  }
+  footer .heading,.heading,.blog-style img {
+    width: 100%;
+  }
+  .consulting-business-text.two {
+    margin-bottom: 40px;
+    margin-top: 30px;
+  }
+  .team-style img {
+    height: 100%;
+    width: 54%;
+  }
+}
+@media(max-width: 576px){
+  .provide img.shaps-dots,.subscribe-text:before,.video-fram:before,
+  .team-style:before,.get-a-quote:before,.background-color:before,
+  .consulting-business-text:before,.pricing-plan-style:before {
+    display: none;
+  }
+  .service-text i {
+    width: 80px;
+    height: 88px;
+  }
+  .service-text svg {
+    width: 50px;
+  }
+  .video-fram h3 {
+    font-size: 22px;
+  }
+  .team-style.two {
+    display: block;
+  }
+  .team-style.two .team-text {
+    padding-top: 40px;
+    padding-left: 40px;
+    margin: 0;
+    margin-top: -20px;
+    padding-bottom: 30px;
+  }
+  .content p {
+    font-size: 16px;
+  }
+  .get-subscribee .btn,.get-subscribee input {
+    width: 100%;
+  }
+}
+@media(max-width: 500px){
+  .logo img {
+    width: 84%;
+  }
+  .team-style img {
+    height: 100%;
+    width: 100%;
+  }
+}
+@media(max-width: 480px){
+  ul.check-list li {
+    font-size: 16px;
+  }
+  .unlimited-design img.shaps-dots {
+    display: none;
+  }
+  .video i {
+    width: 70px;
+    height: 70px;
+  }
+  .heading.two p {
+    font-size: 16px;
+  }
+  .heading h2 {
+    font-size: 34px;
+    line-height: 38px;
+  }
+  .video img {
+    width: 100%;
+    height: 200px;
+  }
+  .recommended h5 {
+    font-size: 24px;
+    padding-bottom: 25px;
+  }
+  .img-provide img {
+    width: 100%;
+  }
+  .content p,p {
+    font-size: 14px;
+    line-height: 24px;
+  } 
+}
+@media(max-width: 450px){
+  .rating h4 {
+    font-size: 18px;
+    margin-right: 12px;
+  }
+  .copyright a img {
+    width: 140px;
+  }
+  .video-fram iframe {
+    height: 192px;
+  }
+  .login a {
+    font-size: 14px;
+  }
+  .title {
+    padding: 14px 53px;
+    padding-right: 10px;
+    font-size: 16px;
+  }
+  .accordion-item .icon {
+    left: 20px;
+    font-size: 15px;
+  }
+  h1 {
+    font-size: 38px;
+    line-height: 48px;
+  }
+  .heading h2 span {
+    line-height: 30px;
+  }
+  .login .btn {
+    padding: 12px 22px;
+    margin-left: 15px;
+  }
+  .logo {
+    width: 170px;
+  }
+  .heading p {
+    font-size: 16px;
+    line-height: 26px;
+    padding-top: 16px;
+  }
+  img.shaps-dots {
+    width: 180px;
+  }
+  .rating h5 {
+    font-size: 13px;
+    padding-right: 11px;
+  }
+}
+@media(max-width: 410px){
+  .logo img {
+    width: 76%;
+  }
+  .login .btn {
+    margin-left: 10px;
+  }
+}
