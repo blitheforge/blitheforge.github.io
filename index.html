@@ -722,13 +722,39 @@
     }
   }
 
+  // Function to fetch the number of comments for a given repository
+  async function fetchRepoComments(owner, repo) {
+    try {
+      // Fetch issues for the repository
+      const response = await fetch(
+        `https://api.github.com/repos/${owner}/${repo}/issues`
+      );
+      const issues = await response.json();
+
+      // Calculate the total number of comments for all issues
+      const totalComments = issues.reduce(
+        (total, issue) => total + issue.comments,
+        0
+      );
+
+      return totalComments;
+    } catch (error) {
+      // Log and handle errors if any
+      console.error(`Error fetching comments for ${owner}/${repo}:`, error);
+      return 0;
+    }
+  }
+
   // Function to display blog posts
   async function displayBlogPosts() {
     const blogPostsContainer = document.getElementById("blog-posts");
     const githubRepos = await fetchGitHubRepos("blitheforge");
 
     // Display GitHub repository entries
-    githubRepos.forEach((repo) => {
+    for (const repo of githubRepos) {
+      // Fetch the number of comments for the repository
+      const comments = await fetchRepoComments(repo.owner.login, repo.name);
+
       blogPostsContainer.innerHTML += `
         <div class="col-lg-4 col-md-6">
           <div class="blog-style">
@@ -762,19 +788,19 @@
                   <i>
                     <!-- SVG for Comments icon -->
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-dots" viewBox="0 0 16 16">
-                      <path d="M2.5 3.5a1.5 1.5 0 0 1 3 0v5a1.5 1.5 0 0 1-3 0v-5zM8 4a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm5-1a1.5 1.5 0 0 1 1.5 1.5v5a1.5 1.5 0 0 1-3 0v-5A1.5 1.5 0 0 1 13 3z"/>
+                      <path d="M2.5 3.5a1.5 1.5 0 1 1 3 0v5a1.5 1.5 0 1 1-3 0v-5zM8 4a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm5-1a1.5 1.5 0 1 1 1.5 1.5v5a1.5 1.5 0 0 1-3 0v-5A1.5 1.5 0 0 1 13 3z"/>
                       <path d="M0 3a1 1 0 0 1 1-1h1.071a6.524 6.524 0 0 0 4.487 2c1.67 0 3.228-.62 4.443-1.747A1 1 0 0 1 12 2h3a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-1.071a6.52 6.52 0 0 0-4.487-2A7.494 7.494 0 0 0 4.5 5H3a1 1 0 0 1-1-1V3z"/>
                     </svg>
                     <!-- Comments icon -->
                   </i>
-                  ${repo.comments} Comments
+                  ${comments} Comments
                 </a>
               </li>
             </ul>
           </div>
         </div>
       `;
-    });
+    }
   }
 
   // Call the function to display blog posts when the page loads
